@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+class StarPattern {
+public:
+    void printPattern(int n) {
+        for (int i = 0; i < n; ++i) {
+            printStars(i + 1);
+        }
+    }
+
+private:
+    void printStars(int count) {
+        for (int i = 0; i < count; ++i) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    int n;
+    cin >> n;
+    StarPattern sp;
+    sp.printPattern(n);
+    return 0;
+}
