@@ -1,15 +1,10 @@
-#include<iostream>
-using namespace std;
+def main():
+    n = int(input("Enter the size of the grid: "))
+    for i in range(n):
+        for j in range(n):
+            print("*", end="")
+        print()
 
-int main() {
-    int n;
-    cin>>n;
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            cout << "*";
-        }
-        cout << endl;
-    }
-    return 0;
-}
+if __name__ == "__main__":
+    main()
 
