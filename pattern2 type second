@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+void printStars(int count) {
+    if (count > 0) {
+        cout << "*";
+        printStars(count - 1);
+    } else {
+        cout << endl;
+    }
+}
+
+void printPattern(int n, int current = 1) {
+    if (current <= n) {
+        printStars(current);
+        printPattern(n, current + 1);
+    }
+}
+
+int main() {
+    int n;
+    cin >> n;
+    printPattern(n);
+    return 0;
+}
